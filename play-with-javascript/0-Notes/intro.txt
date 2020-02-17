@@ -1,0 +1,82 @@
+
+
+------------------------------------------
+why javascript?
+------------------------------------------
+
+ -> client-side application   :  browser
+ -> server-side application   :  Node.js
+
+------------------------------------------
+ javascript features 
+------------------------------------------
+
+--> easy to use
+
+    => dynamic
+    => FP + OOP
+
+--> single threaded process, can execute multiole action cuncurrently
+--> non-blocking/asyncronous io    
+
+
+------------------------------------------
+javascript version
+------------------------------------------
+
+
+ECMAScript  spec
+------------------
+
+    ==> latest : ES6
+
+
+------------------------------------------
+How  to run javascript program ?
+------------------------------------------
+
+==> using javascript-runtime/engine
+
+browser-envi
+-------------
+
+    => chrome  : ( v8 -> c++ )
+    => firefox : ( rhino / spider monkey -> java)
+    => IE/Edge : ( chakra )
+    => Safari  : ( nitro )
+
+
+other-envi
+-------------
+
+    ==> Node.js : ( v8 )
+
+
+------------------------------------------
+
+==> "hello wlorld "
+
+------------------------------------------
+
+Naming convnetions
+-------------------
+
+  class ( type ) names  ==> pascal-case e.g : A_____B______C_______
+  var / method          ==> camel-case  e.g : ______A______B_______
+  constants             ==> upper-case 
+  file-names            ==> lower-case  e.g : data-types.js    
+
+
+------------------------------------------
+
+
+Level-1 / basics
+------------------
+
+==> data types
+
+
+
+
+ 
+
