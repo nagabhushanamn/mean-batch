@@ -47,11 +47,11 @@ var newArr = [
 
 // or ( literal style )
 
-var newRe=/\d{10}/
+var newRe=/^\d{10}$/
 
 var inp = "1234567890"
 
-if (re.test(inp))
+if (newRe.test(inp))
     console.log("valid input")
 else
     console.log("invalid input")
