@@ -10,8 +10,9 @@
  * 
  *  how to create function in javascript language ?
  * 
+ * ------------------------------------------------
  *  2 ways
- * -----------
+ * ------------------------------------------------
  * 
  *  way-1 : decleration
  * 
@@ -191,3 +192,62 @@
 
 
 //------------------------------------------------------
+// Function closure
+//------------------------------------------------------
+
+/**
+ * 
+ * 
+ * A closure is a function having access to the parent scope,
+ * even after the parent function has closed.
+ * 
+ */
+
+
+// function teach(sub) {
+//     console.log(`teaching ${sub}`)
+//     let notes = `${sub}-notes`
+//     let fun = "bla bla bla"
+//     function learn() {
+//         console.log(`learning with ${notes}`)
+//     }
+//     //learn();
+//     console.log(`teaching ends`)
+//     return learn;
+// }
+// let learnFunc = teach('javascript') // teach-scope
+// learnFunc();
+
+
+
+// why/where we need closures ?
+
+/**
+ * 
+ *  use-1 : to abstract public behav of any module
+ * 
+ */
+
+// e.g : counter module
+
+// best practice : never keep appln's var/function in global-scope
+
+
+const counter = (function() {
+    console.log("counter module init...")
+    let count = 0  // private
+    // public
+    function inc() {
+        count++
+    }
+    // public
+    function get() {
+        return count;
+    }
+    return {
+        inc: inc,
+        get: get
+    }
+})()
+
+

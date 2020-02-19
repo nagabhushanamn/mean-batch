@@ -1,6 +1,10 @@
+
+
+
 function f1() {
     console.log("f1()")
 }
+
 function f2() {
     console.log("f2()")
 }
@@ -13,9 +17,12 @@ function f2() {
     => code scatterning / duplication 
 */
 
-// Higher-Order-Function ==> Higher-Order-Programming 
+
 
 /*
+
+Soln: Higher-Order-Function ==> Higher-Order-Programming 
+
     why we need ?
 
     with small functions, 
@@ -30,7 +37,6 @@ function bannerWrapper(f) {
         console.log("<<<<<<<<<<<<<<<<<<<")
     }
 }
-
 function secWrapper(f) {
     return function () {
         console.log("sec check")
