@@ -1,7 +1,7 @@
 
 /**
  * 
- * 
+ *
  *  what is function ?
  * 
  *   A function relates an input to an output.
@@ -55,25 +55,139 @@
 // console.log(sum(12, 13))
 
 //-----------------------------------------------------
+// Function Parameter(s)
+//-----------------------------------------------------
+
+
+// function func(a, b, c, d, e) {
+//     console.log(arguments[0])
+//     console.log(arguments[1])
+//     console.log(arguments[2])
+//     console.log(arguments[3])
+//     console.log(arguments[4])
+// }
+// func(10, 20, 30, 40, 50)
+
 // e.g
-//-----------------------------------------------------
 
-let userType = "Nil"
-let action = null;
-function login() {
-    //....
-    userType = "guest"
-}
-login();
-if (userType === "admin") {
-    action = function () {
-        console.log("admin action")
-    }
-} else {
-    action = function () {
-        console.log("guest action")
-    }
-}
-action()
+// function sum() {
+//     let idx = 0,
+//         result = 0,
+//         len = arguments.length
+//     while (idx < len) {
+//         result += arguments[idx]
+//         idx++
+//     }
+//     return result
+// }
+
 
 //-----------------------------------------------------
+// Function with default Parameter(s)  ( ES6 )
+//-----------------------------------------------------
+
+// function func(a = 10, b = 20) {
+//     // if (!a) a = 10
+//     // if (!b) b = 20
+//     // a = a || 10
+//     // b = b || 20
+//     console.log(a)
+//     console.log(b)
+// }
+// func(100)
+
+
+
+//-----------------------------------------------------
+// Function with rest Parameter  ( ES6 )
+//-----------------------------------------------------
+
+
+// function func(a, b, ...remaining) {
+//     console.log(a)
+//     console.log(b)
+//     console.log(remaining)
+
+//     console.dir(arguments)
+// }
+// func(100, 200, 300, 400, 500, 600, 700)
+
+
+//------------------------------------------------------
+// FP principles
+//------------------------------------------------------
+
+/**
+ *  #1 : function is value/object 
+ *       i.e we can assign to variable
+ *      
+ *      function as first-class citizen
+ */
+
+// function greet() {
+//     console.log("hello..")
+// }
+// let sayHello = greet
+// sayHello();
+
+//------------------------------------------------------
+
+/**
+ * 
+ *  #2 : parameter of function can be other function
+ *       
+ */
+
+// function greet(f) {
+//     console.log(">>>>>>>>>>>>>>>>>>")
+//     if (f) f()
+//     else
+//         console.log("greetings")
+//     console.log("<<<<<<<<<<<<<<<<<<")
+// }
+
+// greet();
+
+// let tn = function () {
+//     console.log("vanakkam")
+// }
+// // tn();
+// greet(tn)
+
+
+// e.g
+
+// let nums = [1, 3, 5, 7, 9, 2, 4, 6, 8, 10]
+// let asc = function (x, y) { return x - y }
+// let dsc = function (x, y) { return y - x }
+// nums.sort(dsc);
+// console.log(nums)
+
+
+//------------------------------------------------------
+
+//------------------------------------------------------
+
+/**
+ * 
+ *  #3 : return value of function can be other function
+ *       
+ */
+
+function teach() {
+    console.log("teaching javascript...")
+    let learn = function () {
+        console.log("learning javascript...")
+        console.log("learning ends")
+    }
+    //learn();
+    console.log("teaching ends")
+    return learn
+}
+
+let learnFunc=teach();
+learnFunc();
+learnFunc();
+
+
+//------------------------------------------------------
