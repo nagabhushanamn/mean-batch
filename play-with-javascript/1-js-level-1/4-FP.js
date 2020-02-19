@@ -174,20 +174,20 @@
  *       
  */
 
-function teach() {
-    console.log("teaching javascript...")
-    let learn = function () {
-        console.log("learning javascript...")
-        console.log("learning ends")
-    }
-    //learn();
-    console.log("teaching ends")
-    return learn
-}
+// function teach() {
+//     console.log("teaching javascript...")
+//     let learn = function () {
+//         console.log("learning javascript...")
+//         console.log("learning ends")
+//     }
+//     //learn();
+//     console.log("teaching ends")
+//     return learn
+// }
 
-let learnFunc=teach();
-learnFunc();
-learnFunc();
+// let learnFunc=teach();
+// learnFunc();
+// learnFunc();
 
 
 //------------------------------------------------------
