@@ -1,9 +1,8 @@
 
 
-// why we need constructor ?
-
 
 /*
+// why we need constructor ?
     
 how to create object ?
 
