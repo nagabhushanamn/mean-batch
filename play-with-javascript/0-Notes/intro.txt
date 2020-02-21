@@ -78,6 +78,7 @@ Level-1 / basics
 ==> scope / execution-context
 ==> function
 ==> function binding ( 'this' )
+==> arrow function ( es6 )
 
 
 
