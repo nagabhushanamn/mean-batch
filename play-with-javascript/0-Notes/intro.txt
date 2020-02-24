@@ -79,6 +79,7 @@ Level-1 / basics
 ==> function
 ==> function binding ( 'this' )
 ==> arrow function ( es6 )
+==> OOP
 
 
 
